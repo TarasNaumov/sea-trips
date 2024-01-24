@@ -1,0 +1,98 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="css/styles.css")
+        title ЗМІНИ ЦЕ!!!
+    body
+        include components/sprite.pug
+        include helpers/vars.pug
+        include helpers/mixins.pug
+
+        include components/header.pug
+
+        main
+            .wrapper.col-xl-9.col-lg-10.col-md-11.col-12.m-auto.container.mb-5
+                section#card
+                    .container.m-auto.col.d-flex.flex-column.align-items-center.flex-xl-row
+                        .col-12.col-xl-3
+                            .info-company-container.col-12.col-lg-8.col-xl-12
+                                p.info-company про нашу компанію
+                                p.our-company Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
+                                +button("детальніше", "#", "button")
+                                p.company-price * - зверніть увагу, зміна ціни може залежати від курсу долара.
+                        .card-container.container.col-12.col-lg-12.d-flex.flex-column.align-items-center.align-items-lg-stretch.flex-lg-row.gap-4.col-xl-9
+                                +card("іконка велосипеда", "img/bicycle.png", "335 грн", "Тур на велосипедах", "Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.")                            
+                                +card("іконка острів", "img/island.png", "500 грн", "Екскурсія на острів", "Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року.", "card-premium")
+                                +card("іконка контакта", "img/contacts.png", "250 грн.", "Особливе замовлення", "Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші.", "card-premium")
+                    div.col-12.text-center
+                        a(href="#").see-all
+                            | дивитись усі плани
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"/></svg>
+                hr.m-0.mb-5                           
+                section.pt-5
+                    .desert-island.d-flex.flex-column.flex-lg-row
+                        div.desert-island-img.col-12.col-md-12.col-lg-4.text-center.mb-3.d-lg-flex
+                            img(src="img/desert_island.jpg", alt="").col-12.col-md-8.col-lg-11
+                        div.desert-island-info.col-12.col-lg-8
+                            h2.mb-3 Дивовижний безлюдний острів, який зводить людей з розуму
+                            div.d-flex.flex-column-reverse.flex-lg-row.align-items-lg-center.justify-content-lg-between
+                                .col-12.col-lg-8
+                                    p.mb-xxl-4 Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                                    .desert-island-button.col-lg-8.col-xxl-12.d-sm-flex.gap-1.flex-lg-column.flex-xxl-row.align-self-xxl.gap-xl-3
+                                        +button("замовити тур", "#", "button col-12  col-sm-6 g-col-6 col-lg-12 col-xxl-6 mb-3 m-sm-0")
+                                        +button("детальніше", "#", "button-blue col-12 col-sm-6 col-lg-12 col-xxl-6 g-col-6 ")
+                                div.desert-island-price.align-self-end.text-center.col-12.col-lg-4.align-self-sm-center.p-2.col-xl-3
+                                    p.price.mb-2 575 грн./день
+                                    p В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+
+            section.wave.py-5.mb-5
+                .wrapper.col-xl-9.col-lg-10.col-md-11.col-12.m-auto.container.d-lg-flex.justify-content-lg-between
+                    div.wave-info.col-md-9.col-lg-6
+                        h2 СПІЙМАЙ ХВИЛЮ 
+                            span ЖИВИ ЯСКРАВО!
+                        p.col-xxl-9 Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+                        +button("детальніше", "#", "button")
+                    div.comments.text-center.py-3.px-2.px-sm-5.col-md-9.col-lg-6.m-md-auto
+                        img(src="img/double-coma.png", alt="").mb-2
+                        p.comments-text.text-start Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи. 
+                        .people 
+                            p.name.mb-0 Олег Набережний
+                            p.rights.mb-0 клієнт
+                            img(src="img/oleg.png", alt="Олег Набережний")
+            section.special-prop.text-center
+                p.section-name Спеціальні пропозиції тижня
+                p.section-info.mb-5 Гарячі праозиції, по-швидше обирай і поїхали!
+                .wrapper.col-xl-9.col-lg-10.col-md-11.col-12.m-auto.container.d-flex.justify-content-center.align-items-stretch.flex-wrap.gap-3.justify-content-xxl-between.flex-xxl-nowrap.mb-5
+                    +card-footer("Романтична подорож", "img/romantic_trip.jpg", "2599 грн.", "Романтична подорож на 2", "Подорож у найромантичніші куточки світу, занурить вас у дивовижні пейзажі природи.")
+                    +card-footer("Велотур", "img/bicycle_tour.jpg", "555 грн.", "Велотур", "Бажаєте прокататись з вітерцем, та ще й з критим краєвидом довкола? Тоді швидше замовляй велотур!", "bicucle-tour")
+                    +card-footer("На острови!", "img/quiet_island.jpg", "1559 грн.", "На острови!", "Хочеш зануритись у тишу, місце де не має натовпу, та панує дмка природа? Тоді вперед за пригодами!")
+                    +card-footer("Катання на сьорфінгу", "img/surfing.jpg", "999 грн", "Катання на сьорфінгу", "Хочеш отримати екстрим та мега вражень одночасно? Тоді вперед ловити хвилі!")
+                .wrapper.col-xl-9.col-lg-10.col-md-11.col-12.m-auto.container.mb-5
+                    hr
+            section.extra-info-section
+                .wrapper.col-xl-9.col-lg-10.col-md-11.col-12.m-auto.container.d-flex.justify-content-center.align-items-stretch.flex-wrap.gap-3.justify-content-xxl-between.flex-xxl-nowrap.mb-5
+                    .extra-info.col-12.col-md-5.col-xxl-3
+                        p додаткова інформація
+                    +more-info("Графік роботи готелів.xls", "Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.", "work-schedule")
+                    +more-info("Інформація про харчування.xls", "У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додотково, то ознайомтесь з умовами.", "nutrition")
+                    .ask-question.text-center.px-2.py-0.pt-5.col-12.col-md-5.col-xxl-3
+                        p.card-name задати питання
+                        p.card-info.col-7.m-auto.mb-4 Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
+                        a.tell.d-inline-block.mb-3(href="#")
+                            <svg class="icon">
+                                <use xlink:href="#phone"></use>
+                            </svg>
+                            | +38 (050) 56 98 511
+                        .people.pb-5
+                            .name Анна Миколаївна
+                            .work.mb-3 консультант
+                            img(src="img/anna.png", alt="Анна Миколаївна")
+
+        include components/footer.pug
+        script(src="js/scripts.js")
