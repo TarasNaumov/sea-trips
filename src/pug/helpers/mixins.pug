@@ -11,7 +11,7 @@ mixin card(altText, imagePath, price, card_name, card_info, className="")
         p.card-info #{card_info}
 
 mixin card-footer(altText, imagePath, price, card_name, card_info, className="")
-  figure.card-bottom.mb-3.col-12.col-sm-5.col-xxl-3.p-0.g-col-1(class=className)
+  figure.card-bottom.mb-3.col-12.col-sm-10.col-md-5.col-xxl-3.p-0.g-col-1(class=className)
     figcaption.col-12.d-flex.flex-column.justify-content-between
       .card-img.container.text-center.mb-4.col-12.p-0
         img(src=imagePath, alt=altText).col-12
@@ -27,7 +27,7 @@ mixin card-footer(altText, imagePath, price, card_name, card_info, className="")
           a(href="#").order-button замовити <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"/></svg>
 
 mixin more-info(cardName, cardInfo, className="")
-  div.more-info-card.d-flex.flex-column.justify-content-between.px-3.py-4.col-12.col-md-5.col-xxl-3.g-col-6(class=className)
+  div.more-info-card.d-flex.flex-column.justify-content-between.p-5.px-md-3.py-md-4.col-12.col-md-5.col-xxl-3.g-col-6(class=className)
     div
       div.d-flex.gap-3
         .g-col-6

@@ -8,7 +8,7 @@ html(lang="uk")
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik:ital@0;1&display=swap" rel="stylesheet">
         link(rel="stylesheet", href="css/styles.css")
-        title ЗМІНИ ЦЕ!!!
+        title Турагенство Sea Trips. Подорожуй, Відкривай Cвіт З Нами
     body
         include components/sprite.pug
         include helpers/vars.pug
@@ -41,13 +41,13 @@ html(lang="uk")
                             img(src="img/desert_island.jpg", alt="").col-12.col-md-8.col-lg-11
                         div.desert-island-info.col-12.col-lg-8
                             h2.mb-3 Дивовижний безлюдний острів, який зводить людей з розуму
-                            div.d-flex.flex-column-reverse.flex-lg-row.align-items-lg-center.justify-content-lg-between
-                                .col-12.col-lg-8
+                            div.d-flex.flex-column-reverse.flex-lg-row.align-items-lg-stretch.justify-content-lg-between
+                                .col-12.col-lg-7
                                     p.mb-xxl-4 Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
-                                    .desert-island-button.col-lg-8.col-xxl-12.d-sm-flex.gap-1.flex-lg-column.flex-xxl-row.align-self-xxl.gap-xl-3
-                                        +button("замовити тур", "#", "button col-12  col-sm-6 g-col-6 col-lg-12 col-xxl-6 mb-3 m-sm-0")
-                                        +button("детальніше", "#", "button-blue col-12 col-sm-6 col-lg-12 col-xxl-6 g-col-6 ")
-                                div.desert-island-price.align-self-end.text-center.col-12.col-lg-4.align-self-sm-center.p-2.col-xl-3
+                                    .desert-island-button.col-lg-8.col-xxl-10.d-flex.flex-wrap.gap-1.flex-lg-column.flex-xxl-row.align-self-xxl.gap-3
+                                        +button("замовити тур", "#", "button  m-0")
+                                        +button("детальніше", "#", "button-blue g-col-6 ")
+                                div.desert-island-price.align-self-end.text-center.col-12.col-sm-8.mb-sm-2.col-lg-4.align-self-sm-center.p-2
                                     p.price.mb-2 575 грн./день
                                     p В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
 
@@ -56,7 +56,7 @@ html(lang="uk")
                     div.wave-info.col-md-9.col-lg-6
                         h2 СПІЙМАЙ ХВИЛЮ 
                             span ЖИВИ ЯСКРАВО!
-                        p.col-xxl-9 Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+                        p.col-lg-11.col-xxl-9 Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
                         +button("детальніше", "#", "button")
                     div.comments.text-center.py-3.px-2.px-sm-5.col-md-9.col-lg-6.m-md-auto
                         img(src="img/double-coma.png", alt="").mb-2
@@ -75,7 +75,7 @@ html(lang="uk")
                     +card-footer("Катання на сьорфінгу", "img/surfing.jpg", "999 грн", "Катання на сьорфінгу", "Хочеш отримати екстрим та мега вражень одночасно? Тоді вперед ловити хвилі!")
                 .wrapper.col-xl-9.col-lg-10.col-md-11.col-12.m-auto.container.mb-5
                     hr
-            section.extra-info-section
+            section.extra-info-section.col-12.col-sm-7.col-md-12.m-auto
                 .wrapper.col-xl-9.col-lg-10.col-md-11.col-12.m-auto.container.d-flex.justify-content-center.align-items-stretch.flex-wrap.gap-3.justify-content-xxl-between.flex-xxl-nowrap.mb-5
                     .extra-info.col-12.col-md-5.col-xxl-3
                         p додаткова інформація
